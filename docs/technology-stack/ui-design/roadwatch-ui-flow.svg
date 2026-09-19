@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="620" viewBox="0 0 1300 620">
+<rect x="0" y="0" width="1300" height="620" rx="0" fill="#F5F8FC" stroke="none"/>
+<text x="38" y="46" fill="#15355E" font-family="Arial,DejaVu Sans,sans-serif" font-size="25" font-weight="700" text-anchor="start">RoadWatch | Web Monitoring UI Flow</text>
+<text x="38" y="75" fill="#47637B" font-family="Arial,DejaVu Sans,sans-serif" font-size="14" font-weight="400" text-anchor="start">Existing dashboard navigation; mobile detection is a separate client</text>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10z" fill="#4A91E9"/></marker></defs>
+<rect x="35" y="122" width="160" height="90" rx="12" fill="#E3EFFB" stroke="#8DAFC9"/>
+<text x="50" y="149" fill="#143253" font-family="Arial,DejaVu Sans,sans-serif" font-size="16" font-weight="700" text-anchor="start">Open web dashboard</text>
+<text x="50" y="172" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">Entry: /</text>
+<rect x="260" y="122" width="205" height="90" rx="12" fill="#E3EFFB" stroke="#8DAFC9"/>
+<text x="275" y="149" fill="#143253" font-family="Arial,DejaVu Sans,sans-serif" font-size="16" font-weight="700" text-anchor="start">Overview (RW-01)</text>
+<text x="275" y="172" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">Summary and API status</text>
+<rect x="540" y="105" width="220" height="92" rx="12" fill="#E3EFFB" stroke="#8DAFC9"/>
+<text x="555" y="132" fill="#143253" font-family="Arial,DejaVu Sans,sans-serif" font-size="16" font-weight="700" text-anchor="start">Detection Records</text>
+<text x="555" y="155" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">Search / sort / refresh</text>
+<rect x="850" y="105" width="395" height="92" rx="12" fill="#DBF4E7" stroke="#8DAFC9"/>
+<text x="865" y="132" fill="#143253" font-family="Arial,DejaVu Sans,sans-serif" font-size="16" font-weight="700" text-anchor="start">Review result</text>
+<text x="865" y="155" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">Loaded pothole records OR</text>
+<text x="865" y="172" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">no-data/error + retry</text>
+<path d="M 195 165 L 260 165" stroke="#4A91E9" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<path d="M 465 165 L 540 151" stroke="#4A91E9" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<text x="502.5" y="151.0" fill="#365C7A" font-family="Arial,DejaVu Sans,sans-serif" font-size="11" font-weight="700" text-anchor="middle">records</text>
+<path d="M 760 151 L 850 151" stroke="#4A91E9" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<text x="805.0" y="144.0" fill="#365C7A" font-family="Arial,DejaVu Sans,sans-serif" font-size="11" font-weight="700" text-anchor="middle">GET result</text>
+<rect x="35" y="310" width="279" height="105" rx="12" fill="#E3EFFB" stroke="#8DAFC9"/>
+<text x="50" y="337" fill="#143253" font-family="Arial,DejaVu Sans,sans-serif" font-size="16" font-weight="700" text-anchor="start">Pothole Map</text>
+<text x="50" y="360" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">/#map • GPS records only</text>
+<line x1="364" y1="212" x2="364" y2="264" stroke="#4A91E9" stroke-width="2"/>
+<line x1="176" y1="264" x2="1110" y2="264" stroke="#4A91E9" stroke-width="2"/>
+<path d="M 175 264 L 175 310" stroke="#4A91E9" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<rect x="349" y="310" width="279" height="105" rx="12" fill="#E3EFFB" stroke="#8DAFC9"/>
+<text x="364" y="337" fill="#143253" font-family="Arial,DejaVu Sans,sans-serif" font-size="16" font-weight="700" text-anchor="start">Analytics</text>
+<text x="364" y="360" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">/#analytics • Pothole-only</text>
+<text x="364" y="377" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">statistics</text>
+<path d="M 489 264 L 489 310" stroke="#4A91E9" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<rect x="663" y="310" width="279" height="105" rx="12" fill="#E3EFFB" stroke="#8DAFC9"/>
+<text x="678" y="337" fill="#143253" font-family="Arial,DejaVu Sans,sans-serif" font-size="16" font-weight="700" text-anchor="start">Activity</text>
+<text x="678" y="360" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">/#activity • Recent pothole</text>
+<text x="678" y="377" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">events</text>
+<path d="M 803 264 L 803 310" stroke="#4A91E9" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<rect x="977" y="310" width="279" height="105" rx="12" fill="#E3EFFB" stroke="#8DAFC9"/>
+<text x="992" y="337" fill="#143253" font-family="Arial,DejaVu Sans,sans-serif" font-size="16" font-weight="700" text-anchor="start">Settings</text>
+<text x="992" y="360" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">/#settings • Read-only</text>
+<text x="992" y="377" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">configuration</text>
+<path d="M 1117 264 L 1117 310" stroke="#4A91E9" stroke-width="3" fill="none" marker-end="url(#arr)"/>
+<rect x="35" y="475" width="1210" height="100" rx="12" fill="#FDF1D9" stroke="#8DAFC9"/>
+<text x="50" y="502" fill="#143253" font-family="Arial,DejaVu Sans,sans-serif" font-size="16" font-weight="700" text-anchor="start">Data boundary and UI states</text>
+<text x="50" y="525" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">Mobile app: camera -&gt;</text>
+<text x="50" y="542" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">pothole-only detection -&gt;</text>
+<text x="50" y="559" fill="#315B78" font-family="Arial,DejaVu Sans,sans-serif" font-size="12" font-weight="400" text-anchor="start">queue/sync -&gt; REST API -&gt;</text>
+<text x="40" y="608" fill="#566D85" font-family="Arial,DejaVu Sans,sans-serif" font-size="13" font-weight="400" text-anchor="start">Draft design flow v0.1; review pending. No authentication or editable settings screens are claimed.</text>
+</svg>
