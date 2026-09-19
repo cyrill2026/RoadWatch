@@ -1,0 +1,23 @@
+﻿Requirement ID,Requirement Summary,Linked Feature & Use Case / Story,Stack Component / Data,Acceptance / Verification & Status
+FR-01,start a road-monitoring session using the phone camera.,F-01; UC-01/02,Android camera,Start session; show the camera feed. | Planned
+FR-02,recognize Pothole (class 3) in camera imagery using the deployed YOLO/ONNX model.,F-01; UC-01/02,Android / ONNX,A class-3 sample is accepted. | Planned
+FR-03,"ignore model classes 0–2 for alert, save, GPS recording, API submission, database storage and web display.",F-01; UC-01/02,Phone filter + API check,Crack-only test produces zero downstream actions. | Planned
+FR-04,play an audible alert for an accepted pothole detection.,F-02; UC-03/04,Android audio,Sound plays for accepted class-3 detection. | Planned
+FR-05,attach the phone’s GPS coordinates to a pothole record when GPS is available.,F-02; UC-03/04,Phone GPS; API,Saved latitude/longitude match test location. | Planned
+FR-06,save each accepted pothole detection as a detection record.,F-02; UC-03/04,Phone local record,Saved detection is present in local records. | Planned
+FR-07,"When offline, the app shall queue eligible pothole records locally.",F-03; UC-05/07,Phone local queue,A new accepted record is marked pending offline. | Planned
+FR-08,"When connectivity returns, the app shall retry synchronization of queued records.",F-03; UC-05/07,Phone queue; API,Pending record is retried after reconnection. | Planned
+FR-09,submit eligible pothole records through the REST API.,F-03; UC-05/07,Android → FastAPI,An accepted request reaches FastAPI. | Planned
+FR-10,store valid pothole detection records in PostgreSQL.,F-04; UC-05,FastAPI → PostgreSQL,Corresponding record exists in the database. | Planned
+FR-11,The web monitoring system shall display stored pothole records.,F-05; UC-06,Web → API → database,A stored record appears in the web monitor. | Planned
+FR-12,reject invalid and non-pothole detection payloads.,F-04; UC-05,FastAPI validation,Crack/invalid payload is not stored. | Planned
+FR-13,The system shall prevent retries of the same queued record from creating duplicate database rows.,F-03; UC-05/07,Client ID; API; DB,Retry same record ID; database has one row. | Planned
+FR-14,The monitoring user shall be able to review available pothole records through the web monitoring system.,F-05; UC-06,Web → API,Monitoring user opens available records. | Planned
+NFR-01,"On the declared test phone, audible alert should begin within 2 seconds after an accepted pothole detection.",F-02; UC-03,Android / audio,Time 10 accepted detections; record measurements. | Planned
+NFR-02,A submitted detection confidence shall be numeric and within 0–1 inclusive.,F-04; UC-05,API input validation,"Test 0, 1, out-of-range and nonnumeric values. | Planned"
+NFR-03,Queued pothole records shall remain available after the app closes and reopens while offline.,F-03; UC-07,Android local queue,Queue survives offline app restart. | Planned
+NFR-04,"When available, saved latitude shall be within −90 to 90 and longitude within −180 to 180 and shall not be swapped.",F-02/F-04; UC-04,GPS; API; DB,Test known coordinates and bounds. | Planned
+NFR-05,run on the team’s declared Android test device and OS version.,F-01; UC-01/02,Android test phone,Record Android device/OS and test result. | Planned
+NFR-06,"Mobile and web clients shall access stored detection data through the REST API, not directly from the database.",F-03/F-04/F-05; UC-05/06,Client/API/DB layers,Check data flow/configuration. | Planned
+NFR-07,"give understandable status/error feedback for camera denial, GPS unavailability and failed submission without falsely showing success.",F-01/F-03; UC-01/07,Android UI; API,Simulate failures and inspect on-screen status. | Planned
+NFR-08,The Android app shall not connect directly to PostgreSQL or contain PostgreSQL connection credentials.,F-03/F-04; UC-05,Android and API config,Inspect app configuration and network route. | Planned
