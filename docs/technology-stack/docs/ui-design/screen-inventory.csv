@@ -1,7 +1,0 @@
-Screen ID,Name,Main user,Purpose,Flutter widgets,Reusable components,State,API,Route
-RW-01,Overview,Monitoring User,"Summary cards, status, detection summary","Scaffold, AppBar, Drawer, Cards, status chip","Header, metric card, feedback","API fetch/error, refresh",GET pothole summary via API,/#overview
-RW-02,Pothole Map,Monitoring User,GPS pothole markers or no-location message,"Map container, detection-type dropdown, legend","Header, status, empty-state","Map loading, marker selection",GET records with GPS via API,/#map
-RW-03,Detection Records,Monitoring User,Review/search/sort pothole records,"Search field, fixed Potholes filter, sort, refresh, table/card","Header, record row, status, buttons","Query, sort, loading/errors",GET saved pothole records via API,/#detections
-RW-04,Analytics,Monitoring User,Pothole statistics and confidence summary,"Cards, chart panels, feedback banner","Header, metric card, chart panel",Async summary/chart data,GET pothole statistics via API,/#analytics
-RW-05,Activity,Monitoring User,Recent pothole events and activity timeline,"Summary cards, recent-event list, refresh","Header, event row, feedback",Async event data,GET pothole events via API,/#activity
-RW-06,Settings,Monitoring User; System Administrator (view only),Show read-only model/API/database configuration,"Static information cards, config rows, read-only notice","Header, info card, label/value",API availability indicator (not editable),Existing config info; no PATCH/PUT,/#settings
