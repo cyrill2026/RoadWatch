@@ -1,0 +1,65 @@
+{
+  "post_request": {
+    "damage_type": "Pothole",
+    "confidence": 0.87,
+    "latitude": 9.0,
+    "longitude": 125.5,
+    "detected_at": "2026-09-20T02:00:00Z",
+    "client_detection_id": "demo_pothole_001"
+  },
+  "post_created": {
+    "item": {
+      "id": 125,
+      "damage_type": "Pothole",
+      "confidence": 0.87,
+      "latitude": 9.0,
+      "longitude": 125.5,
+      "detected_at": "2026-09-20T02:00:00Z",
+      "client_detection_id": "demo_pothole_001"
+    },
+    "duplicate": false
+  },
+  "post_retry": {
+    "item": {
+      "id": 125,
+      "damage_type": "Pothole",
+      "confidence": 0.87,
+      "latitude": 9.0,
+      "longitude": 125.5,
+      "detected_at": "2026-09-20T02:00:00Z",
+      "client_detection_id": "demo_pothole_001"
+    },
+    "duplicate": true
+  },
+  "get_success": {
+    "items": [
+      {
+        "id": 125,
+        "damage_type": "Pothole",
+        "confidence": 0.87,
+        "latitude": 9.0,
+        "longitude": 125.5,
+        "detected_at": "2026-09-20T02:00:00Z",
+        "client_detection_id": "demo_pothole_001"
+      }
+    ],
+    "limit": 50,
+    "offset": 0,
+    "has_more": false
+  },
+  "get_empty": {
+    "items": [],
+    "limit": 50,
+    "offset": 0,
+    "has_more": false
+  },
+  "validation_error": {
+    "error": {
+      "code": "VALIDATION_ERROR",
+      "message": "Some fields are invalid.",
+      "details": {
+        "confidence": "Must be a number from 0 to 1."
+      }
+    }
+  }
+}
